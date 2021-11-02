@@ -1,0 +1,59 @@
+<html>
+	<head>
+		<script>
+			function largestnum()
+			{
+				var num1;
+				num1 = Number(document.getElementById("N").value);
+				
+				let num3=document.getElementById('ddlselect').value;
+                
+				if(num1>=9&&num1<10)
+				{
+					window.alert(num3+"S");
+				}
+                else if(num1>=8)
+				{
+					window.alert(num3+"A");
+				}
+				else if(num1>=7)
+				{
+					window.alert(num3+"A");
+				}
+				else if(num1>=6)
+				{
+					window.alert(num3+"C");
+				}
+                else if(num1>=5)
+				{
+					window.alert(num3+"D");
+				}
+                else if(num1<5)
+				{
+					window.alert(num3+"F");
+				}
+			}
+		</script>
+	</head>
+	<body>
+        
+		<h1>Check largest number </h1>
+		<br>
+		Enter marks : <input type="text" id="N"></input><br>
+		
+        <select name="ddlselect" id="ddlselect">
+            <option value="j">Java</option>
+     
+            <option  value="Js">Java-Script</option>
+     
+            <option  value="P">Python</option>
+     
+            <option  value="c#">C#</option>
+     
+            <option value="C++">C++</option>
+     
+          </select> <br> <br>
+          <button onclick="largestnum()">submit</button>
+          
+	</body>
+</html>
